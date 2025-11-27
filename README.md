@@ -6,7 +6,7 @@
 Universität der Bundeswehr München
 </p>
 <p align="center">
-<a href="[PAPER_LINK]">
+<a href="">
     <img src="http://img.shields.io/badge/FlyPose Paper-coming soon-B31B1B.svg"
          alt="arXiv Logo"
          height="20"
