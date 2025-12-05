@@ -1,33 +1,40 @@
----
-layout: default
-title: FlyPose
----
-
+<div align="center">
 
 # 🕊️ FlyPose: Towards Robust Human Pose Estimation From Aerial Views
 
-[📦 Download Dataset](https://your-dataset-link){: .btn .btn-primary }
-[🎥 Project Video](https://youtu.be/ryGP033J_Mo){: .btn }
-
-
-<p align="center">
+</div><p align="center">
 <strong>Hassaan Farooq, Marvin Brenner, Peter Stütz </strong>
 </p>
 <p align="center">
 Universität der Bundeswehr München
 </p>
+
 <p align="center">
-<a href="">
-    <img src="http://img.shields.io/badge/FlyPose Paper-coming soon-B31B1B.svg"
-         alt="arXiv Logo"
+  <!-- FlyPose Paper badge -->
+  <a href="">
+    <img src="https://img.shields.io/badge/FlyPose%20Paper-📜-red?labelColor=b31b1b&color=c5d6c6"
+         alt="FlyPose Paper"
          height="20"
          style="position:relative; top:3px; margin-right:6px;">
-</a> 
-<sup>| 
-<a href="https://youtu.be/ryGP033J_Mo"><strong> 🎥 Project Video</strong></a> |
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdu98Ukj6---OFhHWNGc5_PLH8L0RcikVS1voJ7vZNdORFnwg/viewform?usp=header"><strong> 📦 Download Dataset</strong></a>
-  </sup>
+  </a>
+
+  <!-- Project Video badge -->
+  <a href="https://youtu.be/ryGP033J_Mo">
+    <img src="https://img.shields.io/badge/Project%20Video-%F0%9F%8E%A5-red?labelColor=1f5e96&color=c5d6c6"
+         alt="Project Video"
+         height="20"
+         style="position:relative; top:3px; margin-right:6px;">
+  </a>
+
+  <!-- Download Dataset badge -->
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdu98Ukj6---OFhHWNGc5_PLH8L0RcikVS1voJ7vZNdORFnwg/viewform?usp=header">
+    <img src="https://img.shields.io/badge/Download%20Dataset-%F0%9F%93%A6-red?labelColor=c4d82e&color=c5d6c6"
+         alt="Download Dataset"
+         height="20"
+         style="position:relative; top:3px;">
+  </a>
 </p>
+
 
 <p align="center">
   <img src="assets/demo.gif" alt="Demo" 
@@ -74,7 +81,7 @@ The dataset is available for research purposes and can be accessed via the link 
 
 ## 📝 Citation
 
-If you find our work useful for your research, please cite our paper:
+If you find our work useful for your research, please use the following BibTeX entry:
 
 ```bibtex
 @inproceedings{flypose2026,
