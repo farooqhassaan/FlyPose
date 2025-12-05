@@ -1,8 +1,7 @@
 <div align="center">
-
-# 🕊️ FlyPose: Towards Robust Human Pose Estimation From Aerial Views
-
-</div><p align="center">
+<h1 align="center">🕊️ FlyPose: Towards Robust Human Pose Estimation From Aerial Views</h1>
+</div>
+<p align="center">
 <strong>Hassaan Farooq, Marvin Brenner, Peter Stütz </strong>
 </p>
 <p align="center">
