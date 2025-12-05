@@ -42,7 +42,7 @@ The dataset is available for research purposes and can be accessed via the link 
 
 <p align="center">
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdu98Ukj6---OFhHWNGc5_PLH8L0RcikVS1voJ7vZNdORFnwg/viewform?usp=header">
-  <img src="https://img.shields.io/badge/Download-FlyPose--104-blue?style=for-the-badge&logo=google-drive" alt="Download Dataset">
+  <img src="https://img.shields.io/badge/Download-FlyPose--104-blue?style=for-the-badge&logo=google-drive" alt="Download Dataset" height="35">
   </a>
 </p>
 
