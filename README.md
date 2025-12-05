@@ -32,6 +32,14 @@ Universität der Bundeswehr München
          height="30"
          style="position:relative; top:3px;">
   </a>
+
+  <!-- GitHub Repo badge -->
+  <a href="https://farooqhassaan.github.io/FlyPose/">
+    <img src="https://img.shields.io/badge/Project Page-%F0%9F%92%BB-red?labelColor=2b3137&color=c5d6c6"
+         alt="GitHub Repo"
+         height="30"
+         style="position:relative; top:3px;">
+  </a>
 </p>
 
 
