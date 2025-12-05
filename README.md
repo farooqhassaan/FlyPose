@@ -14,7 +14,7 @@ Universität der Bundeswehr München
   <a href="">
     <img src="https://img.shields.io/badge/FlyPose%20Paper-📜-red?labelColor=b31b1b&color=c5d6c6"
          alt="FlyPose Paper"
-         height="20"
+         height="30"
          style="position:relative; top:3px; margin-right:6px;">
   </a>
 
@@ -22,7 +22,7 @@ Universität der Bundeswehr München
   <a href="https://youtu.be/ryGP033J_Mo">
     <img src="https://img.shields.io/badge/Project%20Video-%F0%9F%8E%A5-red?labelColor=1f5e96&color=c5d6c6"
          alt="Project Video"
-         height="20"
+         height="30"
          style="position:relative; top:3px; margin-right:6px;">
   </a>
 
@@ -30,7 +30,7 @@ Universität der Bundeswehr München
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdu98Ukj6---OFhHWNGc5_PLH8L0RcikVS1voJ7vZNdORFnwg/viewform?usp=header">
     <img src="https://img.shields.io/badge/Download%20Dataset-%F0%9F%93%A6-red?labelColor=c4d82e&color=c5d6c6"
          alt="Download Dataset"
-         height="20"
+         height="30"
          style="position:relative; top:3px;">
   </a>
 </p>
