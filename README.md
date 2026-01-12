@@ -10,7 +10,7 @@ Universität der Bundeswehr München
 
 <p align="center">
   <!-- FlyPose Paper badge -->
-  <a href="">
+  <a href="https://arxiv.org/abs/2601.05747">
     <img src="https://img.shields.io/badge/FlyPose%20Paper-📜-red?labelColor=b31b1b&color=c5d6c6"
          alt="FlyPose Paper"
          height="30"
