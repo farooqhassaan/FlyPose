@@ -91,11 +91,14 @@ The dataset is available for research purposes and can be accessed via the link 
 If you find our work useful for your research, please use the following BibTeX entry:
 
 ```bibtex
-@inproceedings{flypose2026,
-  title={FlyPose: Towards Robust Human Pose Estimation From Aerial Views},
-  author={Hassaan Farooq, Marvin Brenner, Peter Stütz},
-  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-  year={2026}
+@misc{farooq2026flypose,
+      title={FlyPose: Towards Robust Human Pose Estimation From Aerial Views}, 
+      author={Hassaan Farooq, Marvin Brenner and Peter Stütz},
+      year={2026},
+      eprint={2601.05747},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2601.05747}, 
 }
 ```
 
