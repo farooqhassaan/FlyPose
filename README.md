@@ -9,9 +9,9 @@ Universität der Bundeswehr München
 </p>
 
 <p align="center">
-  <!-- FlyPose Paper badge -->
-  <a href="https://arxiv.org/abs/2601.05747">
-    <img src="https://img.shields.io/badge/FlyPose%20Paper-📜-red?labelColor=b31b1b&color=c5d6c6"
+
+  <a href="https://openaccess.thecvf.com/content/WACV2026/papers/Farooq_FlyPose_Towards_Robust_Human_Pose_Estimation_From_Aerial_Views_WACV_2026_paper.pdf">
+    <img src="https://img.shields.io/badge/FlyPose Paper-📜-red?labelColor=1f5e96&color=c5d6c6"
          alt="FlyPose Paper"
          height="30"
          style="position:relative; top:3px; margin-right:6px;">
@@ -19,7 +19,7 @@ Universität der Bundeswehr München
 
   <!-- Project Video badge -->
   <a href="https://youtu.be/ryGP033J_Mo">
-    <img src="https://img.shields.io/badge/Project%20Video-%F0%9F%8E%A5-red?labelColor=1f5e96&color=c5d6c6"
+    <img src="https://img.shields.io/badge/Project%20Video-%F0%9F%8E%A5-red?labelColor=b31b1b&color=c5d6c6"
          alt="Project Video"
          height="30"
          style="position:relative; top:3px; margin-right:6px;">
@@ -91,14 +91,13 @@ The dataset is available for research purposes and can be accessed via the link 
 If you find our work useful for your research, please use the following BibTeX entry:
 
 ```bibtex
-@misc{farooq2026flypose,
-      title={FlyPose: Towards Robust Human Pose Estimation From Aerial Views}, 
-      author={Hassaan Farooq, Marvin Brenner and Peter Stütz},
-      year={2026},
-      eprint={2601.05747},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2601.05747}, 
+@InProceedings{Farooq_2026_WACV,
+    author    = {Farooq, Hassaan and Brenner, Marvin and St\"utz, Peter},
+    title     = {FlyPose: Towards Robust Human Pose Estimation From Aerial Views},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {March},
+    year      = {2026},
+    pages     = {8617-8627}
 }
 ```
 
