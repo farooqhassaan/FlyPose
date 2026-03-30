@@ -14,6 +14,7 @@ description: Hassaan Farooq, Marvin Brenner, Peter Stütz
 
 ## 📢 News
 
+- **March 2026** – The FlyPose weights and inference code have been released. 💻🥳
 - **Nov 2025** – Our paper has been accepted to **WACV 2026!** 🎉  
 <br>
 
@@ -35,6 +36,19 @@ from difficult aerial perspectives.
 
 ---
 
+## 🤖 Model Code And Weights
+
+We have released the FlyPose models together with the corresponding inference code.
+
+All resources related to model execution, including checkpoints and inference utilities, are organized under `model/`
+in the [FlyPose Github repository](https://farooqhassaan.github.io/FlyPose/).
+
+Detailed instructions on how to set up the environment and run the code are provided in `model/README.md`.
+
+**Note:** The released models are intended for non-commercial use only.
+
+---
+
 ## <img src="assets/drone.png" alt="dataset logo" height="25" style="vertical-align:middle; margin-right:3px; margin-bottom:3px;"/> FlyPose-104 Dataset
 
 The **FlyPose-104** dataset contains human pose annotations under diverse aerial conditions. 
@@ -45,6 +59,7 @@ The dataset is available for research purposes and can be accessed via the link 
   <img src="https://img.shields.io/badge/Download-FlyPose--104-blue?style=for-the-badge&logo=google-drive" alt="Download Dataset" height="35">
   </a>
 </p>
+
 
 ---
 
@@ -62,4 +77,3 @@ If you find our work useful for your research, please use the following BibTeX e
     pages     = {8617-8627}
 }
 ```
-
