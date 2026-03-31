@@ -17,7 +17,7 @@ model/
 
 ## Model Checkpoints
 
-The `model/checkpoints/` directory is organized by detector and pose model variants:
+The FlyPose model checkpoints can be downloaded ([link](../README.md)) and the `model/checkpoints/` directory is to be organized by detector and pose model variants:
 
 ```text
 model/checkpoints/
@@ -26,7 +26,6 @@ model/checkpoints/
 └── pose/
     ├── flypose_s/
     │   ├── end2end.onnx
-    │   ├── ...
     └── flypose_h/
         ├── end2end.onnx
         ├── ...

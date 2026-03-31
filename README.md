@@ -52,7 +52,7 @@ Universität der Bundeswehr München
 
 ## 📢 News
 
-- **March 2026** – FlyPose model weights have been released. 🥳
+- **March 2026** – The FlyPose weights and inference code have been released. 💻🥳
 - **Nov 2025** – Our paper has been accepted to **WACV 2026!** 🎉  
 <br>
 
@@ -78,18 +78,24 @@ from difficult aerial perspectives.
 
 We have released the FlyPose models together with the corresponding inference code.
 
-All resources related to model execution, including checkpoints and inference utilities are organized under `model/`.
+Detailed instructions on how to set up the environment and run the code are provided in [`model/README.md`](model/README.md).
+You can download the FlyPose model weights from the link below.
 
-Detailed instructions on how to set up the environment and run the code are provided in `model/README.md`.
-
-**Note:** The released models are intended for non-commercial use only.
+<p align="center">
+  <a href="">
+    <span style="display:inline-block; position:relative; width:760px; max-width:100%;">
+      <img src="/assets/confetti.svg" width="550" alt="Download FlyPose Weights Confetti">
+      <img src="https://img.shields.io/badge/Download-FlyPose--Weights-darkgreen?style=for-the-badge&amp;logo=google-drive" alt="Download FlyPose Weights" style="position:absolute; left:50%; top:48%; transform:translate(-50%, -50%); width:260px; max-width:60%;">
+    </span>
+  </a>
+</p>
 
 ---
 
 ## <img src="assets/drone.png" alt="dataset logo" height="25" style="vertical-align:middle; margin-right:3px; margin-bottom:3px;"/> FlyPose-104 Dataset
 
 The **FlyPose-104** dataset contains human pose annotations under diverse aerial conditions. 
-The dataset is available for research purposes and can be accessed via the link below.
+The dataset is available for research purposes and can be accessed via the link below. 
 
 <p align="center">
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdu98Ukj6---OFhHWNGc5_PLH8L0RcikVS1voJ7vZNdORFnwg/viewform?usp=header">

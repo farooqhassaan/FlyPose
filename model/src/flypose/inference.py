@@ -96,32 +96,26 @@ def pose_affine(center: np.ndarray, wh: np.ndarray, pose_cfg):
     return matrix, cv2.invertAffineTransform(matrix).astype(np.float32)
 
 
-def preprocess_pose_batch(frame: np.ndarray, boxes: np.ndarray, pose_cfg):
+def preprocess_pose_crop(frame: np.ndarray, box: np.ndarray, pose_cfg):
     input_w, input_h = tuple(pose_cfg.input_size)
     mean = np.array(pose_cfg.mean, dtype=np.float32)
     std = np.array(pose_cfg.std, dtype=np.float32)
-    batch = np.empty((len(boxes), 3, input_h, input_w), dtype=np.float32)
-    inv_mats = []
-
-    for index, box in enumerate(boxes):
-        center, wh = bbox_center_wh(box, pose_cfg.padding)
-        matrix, inv_matrix = pose_affine(center, wh, pose_cfg)
-        warped = cv2.warpAffine(
-            frame,
-            matrix,
-            (input_w, input_h),
-            flags=cv2.INTER_LINEAR,
-            borderMode=cv2.BORDER_CONSTANT,
-            borderValue=(0, 0, 0),
-        )
-        tensor = warped.astype(np.float32)
-        if pose_cfg.to_rgb:
-            tensor = tensor[:, :, ::-1]
-        tensor = (tensor - mean) / std
-        batch[index] = np.transpose(tensor, (2, 0, 1))
-        inv_mats.append(inv_matrix)
-
-    return batch, inv_mats
+    center, wh = bbox_center_wh(box, pose_cfg.padding)
+    matrix, inv_matrix = pose_affine(center, wh, pose_cfg)
+    warped = cv2.warpAffine(
+        frame,
+        matrix,
+        (input_w, input_h),
+        flags=cv2.INTER_LINEAR,
+        borderMode=cv2.BORDER_CONSTANT,
+        borderValue=(0, 0, 0),
+    )
+    tensor = warped.astype(np.float32)
+    if pose_cfg.to_rgb:
+        tensor = tensor[:, :, ::-1]
+    tensor = (tensor - mean) / std
+    tensor = np.transpose(tensor, (2, 0, 1))[None]
+    return tensor, inv_matrix
 
 
 def refine_peak(heatmap: np.ndarray, x: float, y: float):
@@ -162,19 +156,19 @@ def run_pose(session, frame: np.ndarray, boxes: np.ndarray, pose_cfg):
     if len(boxes) == 0:
         return []
 
-    batch, inv_mats = preprocess_pose_batch(frame, boxes, pose_cfg)
     input_name = session.get_inputs()[0].name
     results = []
 
-    for index, box in enumerate(boxes):
-        heatmaps = session.run(None, {input_name: batch[index:index + 1]})[0]
+    for box in boxes:
+        pose_input, inv_matrix = preprocess_pose_crop(frame, box, pose_cfg)
+        heatmaps = session.run(None, {input_name: pose_input})[0]
         if heatmaps.ndim == 4:
             heatmap = heatmaps[0]
         elif heatmaps.ndim == 3:
             heatmap = heatmaps
         else:
             raise RuntimeError(f"Unexpected pose output shape: {heatmaps.shape}")
-        keypoints, scores = decode_pose(heatmap.astype(np.float32), inv_mats[index], pose_cfg)
+        keypoints, scores = decode_pose(heatmap.astype(np.float32), inv_matrix, pose_cfg)
         results.append({"bbox": box, "keypoints": keypoints, "scores": scores})
 
     return results
