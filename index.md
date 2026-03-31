@@ -47,7 +47,7 @@ You can download the FlyPose model weights from the link below.
 <p align="center">
   <a href="">
     <span style="display:inline-block; position:relative; width:760px; max-width:100%;">
-      <img src="/assets/confetti.svg" width="750" alt="Download FlyPose Weights Confetti">
+      <img src="./assets/confetti.svg" width="750" alt="Download FlyPose Weights Confetti">
       <img src="https://img.shields.io/badge/Download-FlyPose--Weights-darkgreen?style=for-the-badge&amp;logo=google-drive" alt="Download FlyPose Weights" style="position:absolute; left:50%; top:48%; transform:translate(-50%, -50%); width:auto; max-width:60%; height: 35px">
     </span>
   </a>
