@@ -82,7 +82,7 @@ Detailed instructions on how to set up the environment and run the code are prov
 You can download the FlyPose model weights from the link below.
 
 <p align="center">
-  <a href="">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeod94pdwgIum41gbu3f7Q43nv7E2BLDq43WMYY4Fd20gYmVQ/viewform?usp=header">
     <img src="/assets/confetti_git.gif" width="550" alt="Download FlyPose Weights">
   </a>
 </p>
