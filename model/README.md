@@ -49,9 +49,12 @@ Some input samples are in `model/input_examples/` and rendered results are writt
 
 ## Environment Setup
 
-Create a conda environment and install the Python dependencies from [`model/requirements.txt`](requirements.txt):
+Clone the repository, enter the project directory, and create a conda environment with the Python dependencies from [`model/requirements.txt`](requirements.txt):
 
 ```bash
+git clone https://github.com/farooqhassaan/FlyPose.git
+cd FlyPose
+
 conda create -n flypose python=3.11 pip -y
 conda activate flypose
 pip install -r model/requirements.txt
@@ -90,4 +93,3 @@ To run the larger pose model:
 ```bash
 python model/src/flypose/run_image_inference.py --config model/configs/flypose_h_config.py
 ```
-
