@@ -36,11 +36,11 @@ from difficult aerial perspectives.
 
 ---
 
-## 🤖 Model Code And Weights
+## 🤖 Demo Code And Weights
 
 We have released the FlyPose models together with the corresponding inference code.
 
-Detailed instructions on how to set up the environment and run the code are provided in the [FlyPose Github repository](https://github.com/farooqhassaan/FlyPose/tree/main/model).
+Detailed instructions on how to set up the environment and run the code are provided in the [FlyPose Github](https://github.com/farooqhassaan/FlyPose/tree/main/model) repository.
 
 You can download the FlyPose model weights from the link below.
 

@@ -74,9 +74,9 @@ from difficult aerial perspectives.
 
 ---
 
-## 🤖 Model Code And Weights
+## 🤖 Demo Code And Weights
 
-We have released the FlyPose models together with the corresponding inference code.
+We have released the FlyPose models together with the corresponding inference code under [`model/`](model/).
 
 Detailed instructions on how to set up the environment and run the code are provided in [`model/README.md`](model/README.md).
 You can download the FlyPose model weights from the link below.
