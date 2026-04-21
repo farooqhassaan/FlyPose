@@ -57,8 +57,31 @@
           <img src="https://img.shields.io/badge/GitHub-%F0%9F%92%BB-red?labelColor=2b3137&color=c5d6c6"
                alt="GitHub Repo"
                height="30"
-               style="position:relative; top:3px;">
+               style="position:relative; top:3px;margin-right:6px;">
         </a>
+
+        <a href="https://github.com/farooqhassaan/FlyPose">
+          <img id="github-badge"
+               src="https://img.shields.io/badge/GitHub-%F0%9F%92%BB-red?labelColor=2b3137&color=c5d6c6"
+               alt="GitHub Repo"
+               height="30"
+               style="position:relative; top:3px;margin-right:6px;">
+        </a>
+
+        <script>
+        fetch("https://api.github.com/repos/farooqhassaan/FlyPose")
+          .then(res => res.json())
+          .then(data => {
+            const stars = data.stargazers_count;
+
+            const format = n => n > 999 ? (n/1000).toFixed(1) + "k" : n;
+
+            const newSrc = `https://img.shields.io/badge/GitHub%20${format(stars)}%20⭐%20-%F0%9F%92%BB-red?labelColor=2b3137&color=c5d6c6`;
+
+            document.getElementById("github-badge").src = newSrc;
+          });
+        </script>
+
       </p>
     </header>
 
