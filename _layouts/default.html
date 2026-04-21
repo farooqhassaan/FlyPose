@@ -69,7 +69,7 @@
 
             const format = n => n > 999 ? (n/1000).toFixed(1) + "k" : n;
 
-            const newSrc = `https://img.shields.io/badge/GitHub(%20${format(stars)}⭐%20)-%F0%9F%92%BB-red?labelColor=2b3137&color=c5d6c6`;
+            const newSrc = `https://img.shields.io/badge/GitHub%20(${format(stars)}⭐)%20-%F0%9F%92%BB-red?labelColor=2b3137&color=c5d6c6`;
 
             document.getElementById("github-badge").src = newSrc;
           });
